@@ -1,0 +1,403 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background-color: #45b7f1;
+}
+
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    background-color: lightblue;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+    padding: 2px 16px;
+    background-color: white;
+}
+
+main {
+    position: relative;
+    width: min(60vh, 70vw);
+    aspect-ratio: 1/1;
+    text-align: center;
+}
+
+.Totoro {
+    position: relative;
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    bottom: 10%
+}
+
+.Totoro_body{
+    position: absolute;
+    margin: auto;
+    bottom: 2%;
+    left: 50%;
+    width: 50%;
+    height: 50%;
+    border-radius: 50% 50% 50% 50% / 77% 77% 40% 40%;
+    background: #4c4a43;
+    transform: translate(-50%);
+}
+
+.Totoro_belly{
+    position: absolute;
+    margin: auto;
+    bottom: 5%;
+    left: 50%;
+    right: 50%;
+    width: 83%;
+    height: 83%;
+    border-radius: 50% 50% 50% 50% / 74% 74% 40% 40%;
+    background-color: #6c685c;
+    transform: translate(-50%);
+}
+
+.Totoro_head{
+    position: absolute;
+    margin: auto;
+    left: 50%;
+    top: 30%;
+    right: 50%;
+    width: 35%;
+    height: 30%;
+    border-radius: 50% 50% 50% 50% / 50% 50% 60% 60%;
+    transform: translate(-50%);
+    background: #4c4a43;
+}
+
+.Totoro_eye_right{
+    position: absolute;
+    margin: auto;
+    background-color: white;
+    top: 27%;
+    right: 20%;
+    width: 17%;
+    height: 22%;
+    transform: translatey(-50%);
+    border-radius: 50% 50% 50% 50%;
+}
+
+.Totoro_eye_left{
+    position: absolute;
+    margin: auto;
+    background-color: white;
+    top: 27%;
+    left: 20%;
+    width: 17%;
+    height: 22%;
+    transform: translatey(-50%);
+    border-radius: 50% 50% 50% 50%;
+}
+
+.Totoro_pupile_right{
+    position: absolute;
+    margin: auto;
+    background-color: black;
+    top: 45%;
+    right: 48%;
+    width: 37%;
+    height: 37%;
+    transform: translatey(-50%);
+    border-radius: 50% 50% 50% 50%;
+}
+
+.Totoro_pupile_left{
+    position: absolute;
+    margin: auto;
+    background-color: black;
+    top: 45%;
+    left: 48%;
+    width: 37%;
+    height: 37%;
+    transform: translatey(-50%);
+    border-radius: 50% 50% 50% 50%;
+}
+
+.Totoro_nose {
+    position: absolute;
+    width: 15%;
+    height: 10%;
+    right: 36%;
+    bottom: 55%;
+    transform: translate(-50%);
+    background-color: #1a1a1b;
+    border-radius: 50% 50% 50% 50%;
+}
+
+.Totoro_nostril_right{
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    left: 80%;
+    bottom: -13%;
+    transform: translate(-50%);
+    background-color: #4c4a43;
+    border-radius: 50% 50% 50% 50% / 60% 30% 50% 40%;
+}
+
+.Totoro_nostril_left{
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    right: 30%;
+    bottom: -13%;
+    transform: translate(-50%);
+    background-color: #4c4a43;
+    border-radius: 50% 50% 50% 50% / 40% 50% 30% 60%;
+}
+
+.Totoro_mouth{
+    position: absolute;
+    height: 5%;
+    width: 5%;
+    top: 53%;
+    left: 49.5%;
+    transform: translate(-50%);
+    background-color: #1a1a1b;
+    border-radius: 50% 50% 50% 50%
+}
+
+.Totoro_whisker_left_one{
+    position: absolute;
+    height: 2%;
+    width: 40%;
+    top: 65%;
+    left: 8%;
+    transform: translate(-50%) rotate(345deg);
+    background-color: black;
+    border-radius: 30% 50% 50% 30%
+}
+.Totoro_whisker_left_two{
+    position: absolute;
+    height: 2%;
+    width: 40%;
+    top: 55%;
+    left: 5%;
+    transform: translate(-50%) rotate(360deg);
+    background-color: black;
+    border-radius: 30% 50% 50% 30%
+}
+.Totoro_whisker_left_three{
+    position: absolute;
+    height: 2%;
+    width: 40%;
+    top: 45%;
+    left: 12%;
+    transform: translate(-50%) rotate(12deg);
+    background-color: black;
+    border-radius: 30% 50% 50% 30%
+}
+
+.Totoro_whisker_right_one{
+    position: absolute;
+    height: 2%;
+    width: 40%;
+    top: 65%;
+    right: 8%;
+    transform: translate(50%) rotate(15deg);
+    background-color: black;
+    border-radius: 50% 30% 30% 50%
+}
+.Totoro_whisker_right_two{
+    position: absolute;
+    height: 2%;
+    width: 40%;
+    top: 55%;
+    right: 5%;
+    transform: translate(50%) rotate(0deg);
+    background-color: black;
+    border-radius: 50% 30% 30% 50%
+}
+.Totoro_whisker_right_three{
+    position: absolute;
+    height: 2%;
+    width: 40%;
+    top: 45%;
+    right: 12%;
+    transform: translate(50%) rotate(348deg);
+    background-color: black;
+    border-radius: 50% 30% 30% 50%
+}
+
+.Totoro_belly_mark_one{
+    position: absolute;
+    width: 18%;
+    height: 13%;
+    left: 50%;
+    top: 5%;
+    background-color: #4c4a43;
+    transform: translate(-50%);
+    border-radius: 50% 50% 50% 50%;
+}
+.Totoro_belly_mark_two{
+    position: absolute;
+    width: 18%;
+    height: 13%;
+    left: 28%;
+    top: 12%;
+    background-color: #4c4a43;
+    transform: translate(-50%);
+    border-radius: 50% 50% 50% 50%;
+}
+.Totoro_belly_mark_three{
+    position: absolute;
+    width: 18%;
+    height: 13%;
+    left: 73%;
+    top: 12%;
+    background-color: #4c4a43;
+    transform: translate(-50%);
+    border-radius: 50% 50% 50% 50%;
+}
+
+.Totoro_belly_mark_one_change{
+    position: absolute;
+    width: 78%;
+    height: 69%;
+    left: 50%;
+    top: 42%;
+    background-color: #6c685c;
+    transform: translate(-50%);
+    border-radius: 50% 50% 50% 50%;
+}
+.Totoro_belly_mark_two_change{
+    position: absolute;
+    width: 78%;
+    height: 69%;
+    left: 50%;
+    top: 42%;
+    background-color: #6c685c;
+    transform: translate(-50%);
+    border-radius: 50% 50% 50% 50%;
+}
+.Totoro_belly_mark_three_change{
+    position: absolute;
+    width: 78%;
+    height: 69%;
+    left: 50%;
+    top: 42%;
+    background-color: #6c685c;
+    transform: translate(-50%);
+    border-radius: 50% 50% 50% 50%;
+}
+
+.Totoro_arm_left{
+    position: absolute;
+    width: 10%;
+    height: 30%;
+    left: 30%;
+    top: 53%;
+    background-color: #4c4a43;
+    transform: translate(-50%) rotate(19deg);
+    border-radius: 50% 50% 50% 50%;
+}
+
+.Totoro_arm_right{
+    position: absolute;
+    width: 10%;
+    height: 30%;
+    right: 30%;
+    top: 53%;
+    background-color: #4c4a43;
+    transform: translate(50%) rotate(341deg);
+    border-radius: 50% 50% 50% 50%;
+}
+
+.Totoro_feet{
+    position: absolute;
+    width: 33%;
+    height: 3%;
+    left: 50%;
+    bottom: 2%;
+    background-color: #4c4a43;
+    transform: translate(-50%);
+    border-radius: 50% 50% 50% 50% / 80% 80% 10% 10% ;
+}
+
+
+.Totoro__ears {
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70%;
+    transform: translatey(-90%);
+}
+
+.Totoro__ear {
+    position: absolute;
+    top: 68%;
+    width: 13%;
+    aspect-ratio: 1/1;
+    background: #4c4a43;
+    border-radius: 50%;
+}
+
+.Totoro__ear--left {
+    left: 20%;
+}
+
+.Totoro__ear--right {
+    right: 20%;
+}
+
+.Totoro__ear::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    aspect-ratio: 1/2;
+    background: #4c4a43;
+    transform-origin: 50% 100%;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.Totoro__ear--left::before {
+    transform: translateY(-100%) rotate(-8deg);
+}
+
+.Totoro__ear--right::before {
+    transform: translateY(-100%) rotate(8deg);
+}
+
+.Totoro__ear::after {
+    content: "";
+    position: absolute;
+    top: 70%;
+    width: 60%;
+    height: 120%;
+    background: #4c4a43;
+}
+
+.Totoro__ear--left::after {
+    left: 40%;
+    transform: rotate(-15deg);
+}
+
+.Totoro__ear--right::after {
+    right: 40%;
+    transform: rotate(15deg);
+}
+
