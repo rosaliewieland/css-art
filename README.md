@@ -9,6 +9,7 @@ This project was developed in collaboration with Marco Holzaepfel. We worked tog
 
 ## Pictures
 
-![alt text](Netflix_Css.png)
 
-![alt text](Totoro_Css.png)
+![alt text](Totoro_Css-1.png)
+
+![alt text](netflixCSS.png)
